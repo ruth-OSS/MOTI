@@ -1,0 +1,74 @@
+body {
+    margin: 0;
+    padding: 20px;
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    /* IMPORTANT BACKGROUND FIX */
+    background-image: url("/static/gif/rahul.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    /* 👇 THIS IS THE IMPORTANT PART (focus control) */
+    background-position: center 25%;
+
+    font-family: Arial, sans-serif;
+}
+
+/* LABEL */
+.kissilbl {
+    font-size: clamp(18px, 4vw, 40px);
+    margin-bottom: 15px;
+}
+
+/* INPUT */
+.kissi {
+    width: 80%;
+    max-width: 300px;
+    padding: 10px;
+    font-size: 16px;
+}
+
+/* BUTTON */
+.kissisub {
+    padding: 12px 25px;
+    font-size: 16px;
+    margin-top: 15px;
+
+    background-color: transparent;
+    border: 2px solid black;
+    border-radius: 10px;
+
+    cursor: pointer;
+    width: 100%;
+    max-width: 250px;
+}
+
+/* 📱 MOBILE ADJUSTMENT */
+@media (max-width: 768px) {
+
+    body {
+        /* move focus slightly up for face visibility */
+        background-position: center top;
+        background-size: cover;
+    }
+
+    .kissi {
+        width: 90%;
+    }
+
+    .kissisub {
+        width: 90%;
+        font-size: 14px;
+    }
+
+    .kissilbl {
+        font-size: 20px;
+    }
+}

@@ -1,0 +1,68 @@
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    /* IMPORTANT: background control */
+    background-image: url("/static/gif/moti.jpeg");
+    background-repeat: no-repeat;
+
+    /* default for laptop */
+    background-size: cover;
+    background-position: center 20%;
+
+    font-family: Arial, sans-serif;
+}
+
+/* BUTTON */
+.lovebtn {
+    background: rgba(255, 255, 255, 0.2);
+    border: 2px solid white;
+    border-radius: 15px;
+
+    padding: 20px;
+    cursor: pointer;
+
+    font-size: clamp(18px, 4vw, 28px);
+    font-style: italic;
+
+    width: 90%;
+    max-width: 400px;
+
+    transition: 0.3s ease;
+}
+
+.lovebtn:hover {
+    transform: scale(1.05);
+    background: rgba(255, 255, 255, 0.4);
+}
+
+/* TITLE */
+h1 {
+    font-size: clamp(18px, 4vw, 32px);
+}
+
+/* 📱 MOBILE FIX (MOST IMPORTANT PART) */
+@media (max-width: 768px) {
+
+    body {
+        /* shift focus upward for face visibility */
+        background-position: center top;
+        background-size: cover;
+    }
+
+    .lovebtn {
+        width: 95%;
+        font-size: 18px;
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+}

@@ -1,0 +1,74 @@
+body {
+    margin: 0;
+    padding: 20px;
+    min-height: 100vh;
+    background: linear-gradient(135deg,
+        #ff9a9e,
+        #fad0c4,
+        #ffd1ff,
+        #ff9a9e);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+/* GLOBAL TEXT */
+.question, .question2,
+.nodeadend, .kissiqp {
+    font-size: clamp(22px, 4vw, 60px);
+    margin: 20px;
+}
+
+/* GIFS */
+.gif, .gifno, .gifyes, .kissigif {
+    width: 80%;
+    max-width: 350px;
+    height: auto;
+    margin: 15px auto;
+    display: block;
+}
+
+/* BUTTONS */
+.yes, .no, .button2, .kissibtn {
+    background: linear-gradient(135deg,
+        #ff9a9e,
+        #fad0c4,
+        skyblue,
+        #ff9a9e);
+    padding: 15px 25px;
+    cursor: pointer;
+    font-size: 16px;
+    border: none;
+    border-radius: 12px;
+    margin: 10px;
+    width: 100%;
+    max-width: 320px;
+}
+
+/* SPECIAL EFFECTS */
+.yes:hover,
+.no:hover,
+.button2:hover,
+.kissibtn:hover {
+    transform: scale(1.05);
+    transition: 0.3s;
+}
+
+/* MOBILE OPTIMIZATION */
+@media (max-width: 768px) {
+
+    body {
+        padding: 10px;
+    }
+
+    .yes, .no, .button2, .kissibtn {
+        width: 90%;
+        font-size: 14px;
+    }
+
+    .gif, .gifno, .gifyes, .kissigif {
+        width: 90%;
+    }
+}
