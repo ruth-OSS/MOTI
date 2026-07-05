@@ -86,6 +86,31 @@ def submit():
     conn.close()
 
     return render_template("thnku.html")
+@app.route("/data")
+def data():
+    conn = sqlite3.connect("proposal.db")
+    cursor = conn.cursor()
+
+    cursor.execute("SELECT * FROM responses ORDER BY id DESC")
+    rows = cursor.fetchall()
+
+    conn.close()
+
+    html = "<h2>SQLite Data</h2><hr>"
+
+    for r in rows:
+        html += f"""
+        <p>
+        <b>ID:</b> {r[0]} <br>
+        <b>Message:</b> {r[1]} <br>
+        <b>Date:</b> {r[2]} <br>
+        <b>Time:</b> {r[3]} <br>
+        <b>IP:</b> {r[4]} <br>
+        <b>Browser:</b> {r[5]}
+        </p><hr>
+        """
+
+    return html
 
 
 if __name__ == "__main__":
