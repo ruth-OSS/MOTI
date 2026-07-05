@@ -1,0 +1,24 @@
+body { margin: 0;
+       height: 1000px;
+       width: 1000px;
+
+
+}
+
+.kissi { height: 30px;
+    position: absolute;
+         right: 800px;
+         bottom: 255px;
+}
+.kissilbl { height: 30px;
+    position: absolute;
+         right: 830px;
+         bottom: 290px;
+}
+.kissisub { height: 30px;
+    position: absolute;
+         right: 815px;
+         bottom: 200px;
+         background-color:transparent;
+         border-style:groove;
+}

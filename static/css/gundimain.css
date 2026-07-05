@@ -1,0 +1,163 @@
+body {
+    margin: 0;
+   height: 1000px;
+   width: 1000px;
+   
+    padding: 20px;
+    background: color(pink);
+     background: linear-gradient(135deg,
+        #ff9a9e,
+        #fad0c4,
+        #ffd1ff,
+        #ff9a9e);
+
+    
+}
+/*mainpage*/
+
+.question { font-size: 2cm;
+            position: absolute;
+            right: 400px;
+            bottom: 400px;           
+            
+}
+
+.yes {  background: linear-gradient(135deg,
+        #ff9a9e,
+        #fad0c4,
+        skyblue,
+        #ff9a9e);
+       padding: 30px;
+       cursor: pointer;
+       position: absolute;
+       right: 850px;
+       bottom: 150px;
+       font-size: 5mm;
+       border: none;
+         border-style:groove;
+    }
+.gif { 
+        height: 150px;
+        position: absolute;
+        right: 740px;
+        bottom: 280px;
+       
+}
+.no { background: linear-gradient(135deg,
+        #ff9a9e,
+        #fad0c4,
+        skyblue,
+        #ff9a9e);
+        width: 180px;
+       padding: 30px;
+       cursor: pointer;
+       position: absolute;
+       right: 600px;
+       bottom: 150px;
+       font-size: 5mm;
+       border: none;
+         border-style:groove;
+
+}
+/* no page*/
+.nodeadend { font-size: 1.5cm;
+            position: absolute;
+            right: 150px;
+            bottom: 625px;           
+            
+}
+.nodeadend2 { background: linear-gradient(135deg,
+        #ff9a9e,
+        #fad0c4,
+        #ffd1ff,
+        #ff9a9e);font-size: 1cm;
+        opacity: 0.3;
+            position: absolute;
+            right: 1020px;
+            bottom: 325px;           
+            
+}
+.gifno { 
+        height: 400px;
+        position: absolute;
+        right: 600px;
+        bottom: 170px;
+       
+}
+.button2 { background: linear-gradient(135deg,
+        #ff9a9e,
+        #fad0c4,
+        skyblue,
+        #ff9a9e);
+        opacity: .7;
+        color: black;
+        width: 180px;
+       padding: 30px;
+       cursor: pointer;
+       position: absolute;
+       right: 400px;
+       bottom: 170px;
+       font-size: 5mm;
+       
+       border: none;
+         border-style:groove;
+
+}
+/* main2page*/
+.question2{ font-size: 1.5cm;
+            position: absolute;
+            right: 300px;
+            bottom: 500px; 
+            text-align: center;          
+            
+}
+.gifyes { 
+        height: 300px;
+        position: absolute;
+        right: 640px;
+        bottom: 230px;
+       
+}
+.kissi{ background: linear-gradient(135deg,
+        #ff9a9e,
+        #fad0c4,
+        #ffd1ff,
+        #ff9a9e);font-size: 1cm;
+        
+            position: absolute;
+            right: 300px;
+            bottom: 125px;           
+            
+} 
+.kissibtn { background: linear-gradient(135deg,
+        #ff9a9e,
+        #fad0c4,
+        skyblue,
+        #ff9a9e);
+        cursor: pointer;
+        
+        color: black;
+        width: 500px;
+       padding: 30px;
+       cursor: pointer;
+       position: absolute;
+       right: 500px;
+       bottom: 40px;
+       font-size: 5mm;
+       
+       border: none;
+         border-style:groove;
+        }
+
+/*get kissi*/
+.kissiqp {position: absolute;
+          right: 200px;
+          bottom: 500px;
+          font-size: 1.5cm;
+          text-align: center;
+}
+.kissigif {position: absolute;
+          right: 500px;
+          bottom: 80px;
+         
+}
