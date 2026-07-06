@@ -111,6 +111,14 @@ def data():
         """
 
     return html
+    @app.route("/headers")
+def headers():
+    html = "<h2>Request Headers</h2><hr>"
+
+    for key, value in request.headers.items():
+        html += f"<b>{key}</b>: {value}<br>"
+
+    return html
 
 
 if __name__ == "__main__":
